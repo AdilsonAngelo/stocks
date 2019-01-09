@@ -2,7 +2,8 @@ console.log($('#result'));
 
 $.ajax('https://fundamentusapi.herokuapp.com/',{
     type: 'GET',
-    crossDomain: true
+    async: true,
+    xhrFields: { withCredentials: true },
 })
     .then(res => {
         console.log(res);
