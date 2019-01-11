@@ -5,6 +5,8 @@ String.prototype.replaceAll = function (search, replacement) {
 
 var stocks;
 
+var table;
+
 $.ajax('https://fundamentusapi.herokuapp.com/', {
 	type: 'GET',
 	async: true,
@@ -67,9 +69,13 @@ $.ajax('https://fundamentusapi.herokuapp.com/', {
 			i++;
 		}
 
-		$('table').DataTable({
-			responsive: true
+		table = $('#result').DataTable({
+			responsive: true,
+			fixedHeader: true,
+			keys: true,
+			select: true,
 		});
+
 	})
 	.catch(err => console.error(err));
 
