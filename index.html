@@ -25,36 +25,46 @@
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
 	<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/af-2.3.2/b-1.5.4/fh-3.1.4/kt-2.5.0/r-2.2.2/sc-1.5.0/sl-1.2.6/datatables.min.css" />
+
+	<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/af-2.3.2/b-1.5.4/fh-3.1.4/kt-2.5.0/r-2.2.2/sc-1.5.0/sl-1.2.6/datatables.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:900|Cinzel:900" rel="stylesheet">
 </head>
 
 <body>
-
+	<div class="color-overlay"></div>
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Brazilian stock ranking</h1>
-			<p>based on Joel Greenblatt's magic formula</p><small>updated everyday</small>
+			<h1 class="header">BRAZILIAN STOCK RANKING</h1>
+			<p>based on Joel Greenblatt's magic formula</p><small>updated everyday. Data source: <a target="_blank" href="http://www.fundamentus.com.br/resultado.php">Fundamentus</a></small>
 		</div>
 		<table id="result" class="table-striped table table-hover table-responsive">
 			<thead>
 				<tr>
 					<th>#</th>
-					<th>Papel</th>
-					<th>Cotação (R$)</th>
+					<th>Tick</th>
+					<th>Cotação</th>
 					<th>P/L</th>
 					<th>DY</th>
 					<th>ROIC</th>
 					<th>ROE</th>
 					<th>PL</th>
 					<th>EV/EBIT</th>
+					<th>Liq. 2 meses</th>
 					<th>Greenblatt</th>
 				</tr>
 			</thead>
 			<tbody>
 			</tbody>
 		</table>
-		<span><small>made by <a href="https://github.com/AdilsonAngelo/stocks">Adilson Angelo</a></small></span>
 	</div>
+	<footer>
+		<p class="text-right" style="padding: 5px; margin: 5px">made by
+			<a target="_blank" href="https://github.com/AdilsonAngelo">Adilson
+				Angelo</a></p>
+	</footer>
 </body>
-<script src="index.js"></script>
+<script src="index.min.js"></script>
 
 </html>

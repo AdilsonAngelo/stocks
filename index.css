@@ -1,3 +1,49 @@
 td, th{
     text-align: center;
 }
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#result_wrapper{
+    background-color: rgba(255, 255, 255, 0.9);
+    /* border: 2px solid black; */
+    box-shadow: black 0px 0px 79px 10px;
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 5px;
+}
+
+body{
+    background-image: url('low_poly_4.jpg');
+    background-attachment: fixed;
+    position: relative;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.container{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.header{
+    font-family: 'Alegreya', serif;
+}
+
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 167, 103);
+    opacity: .5;
+    position: fixed;
+    z-index: -90;
+}
